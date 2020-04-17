@@ -688,6 +688,11 @@ class Solution(object):
                 stack.append((curr.left, ls + [curr.left.val]))
         return res
 
+    def medianSlidingWindow(self, nums, k):
+        small_heap, large_heap = [], []
+
+
+
 
 class MedianFinder(object):
 
@@ -716,12 +721,7 @@ class MedianFinder(object):
             return float(large[0])
         return (large[0] - small[0]) / 2.0
 
-mf = MedianFinder()
 
-mf.addNum(1)
-mf.addNum(2)
-mf.addNum(2)
-print mf.findMedian()
 
 
 #sol = Solution()
